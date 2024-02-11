@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q3AvXFpl8awuBdORNm9DdzO48YBksn5iwYsGpas7czy5f4sp6W+7L94od+1sn3Nmhf042VY8WCK6Vl3pWtGQcw==",
+  "success": true,
+  "projectFilePath": "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.CrossCutting\\Elitetech.Academy.CrossCutting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\halil.arac\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\halil.arac\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\halil.arac\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
