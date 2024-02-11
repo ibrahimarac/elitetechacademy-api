@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Elitetech.Academy.InfraPack\Elitetech.Academy.InfraPack.csproj" />
+  </ItemGroup>
+
 </Project>

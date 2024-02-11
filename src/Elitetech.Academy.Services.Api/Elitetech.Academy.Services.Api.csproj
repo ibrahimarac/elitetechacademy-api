@@ -17,4 +17,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Elitetech.Academy.Data\Elitetech.Academy.Data.csproj" />
+  </ItemGroup>
+
 </Project>

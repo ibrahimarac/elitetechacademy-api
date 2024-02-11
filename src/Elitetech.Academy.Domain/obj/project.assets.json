@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Elitetech.Academy.InfraPack/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Elitetech.Academy.InfraPack.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Elitetech.Academy.InfraPack.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Elitetech.Academy.InfraPack/1.0.0": {
+      "type": "project",
+      "path": "../Elitetech.Academy.InfraPack/Elitetech.Academy.InfraPack.csproj",
+      "msbuildProject": "../Elitetech.Academy.InfraPack/Elitetech.Academy.InfraPack.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Elitetech.Academy.InfraPack >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\halil.arac\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.InfraPack\\Elitetech.Academy.InfraPack.csproj": {
+              "projectPath": "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.InfraPack\\Elitetech.Academy.InfraPack.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
