@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hRE31D3J70QQnndKDuJk/R6PrW1NFO75vl6NKo8FfMpbgmx3ZhUJXnk07kgaSQP0dcXvfGvkkFRU5rtEa2o50Q==",
+  "success": true,
+  "projectFilePath": "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.Domain\\Elitetech.Academy.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\halil.arac\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\halil.arac\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\halil.arac\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
