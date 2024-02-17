@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Elitetech.Academy.Domain.Repository
+namespace Elitetech.Academy.Domain.Repository.Base
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : class
     {

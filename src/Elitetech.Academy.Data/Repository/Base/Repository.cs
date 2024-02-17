@@ -1,9 +1,9 @@
 ﻿using Elitetech.Academy.Data.Context;
-using Elitetech.Academy.Domain.Repository;
+using Elitetech.Academy.Domain.Repository.Base;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Elitetech.Academy.Data.Repository
+namespace Elitetech.Academy.Data.Repository.Base
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
