@@ -1058,6 +1058,21 @@
           }
         }
       },
+      "Elitetech.Academy.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Elitetech.Academy.Data": "1.0.0",
+          "Elitetech.Academy.Domain": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Elitetech.Academy.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Elitetech.Academy.CrossCutting.dll": {}
+        }
+      },
       "Elitetech.Academy.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3164,6 +3179,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Elitetech.Academy.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../Elitetech.Academy.CrossCutting/Elitetech.Academy.CrossCutting.csproj",
+      "msbuildProject": "../Elitetech.Academy.CrossCutting/Elitetech.Academy.CrossCutting.csproj"
+    },
     "Elitetech.Academy.Data/1.0.0": {
       "type": "project",
       "path": "../Elitetech.Academy.Data/Elitetech.Academy.Data.csproj",
@@ -3182,6 +3202,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Elitetech.Academy.CrossCutting >= 1.0.0",
       "Elitetech.Academy.Data >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.4",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -3222,6 +3243,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.CrossCutting\\Elitetech.Academy.CrossCutting.csproj": {
+              "projectPath": "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.CrossCutting\\Elitetech.Academy.CrossCutting.csproj"
+            },
             "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.Data\\Elitetech.Academy.Data.csproj": {
               "projectPath": "D:\\Elitetech\\Projects\\elitetechacademy-api\\src\\Elitetech.Academy.Data\\Elitetech.Academy.Data.csproj"
             }

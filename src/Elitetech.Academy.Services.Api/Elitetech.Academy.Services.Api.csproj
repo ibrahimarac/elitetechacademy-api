@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Elitetech.Academy.CrossCutting\Elitetech.Academy.CrossCutting.csproj" />
     <ProjectReference Include="..\Elitetech.Academy.Data\Elitetech.Academy.Data.csproj" />
   </ItemGroup>
 

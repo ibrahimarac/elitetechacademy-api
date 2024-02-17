@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Elitetech.Academy.Services.Api/1.0.0": {
         "dependencies": {
+          "Elitetech.Academy.CrossCutting": "1.0.0",
           "Elitetech.Academy.Data": "1.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
           "Swashbuckle.AspNetCore": "6.5.0"
@@ -603,6 +604,16 @@
           }
         }
       },
+      "Elitetech.Academy.CrossCutting/1.0.0": {
+        "dependencies": {
+          "Elitetech.Academy.Data": "1.0.0",
+          "Elitetech.Academy.Domain": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "Elitetech.Academy.CrossCutting.dll": {}
+        }
+      },
       "Elitetech.Academy.Data/1.0.0": {
         "dependencies": {
           "Elitetech.Academy.Domain": "1.0.0",
@@ -1060,6 +1071,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Elitetech.Academy.CrossCutting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Elitetech.Academy.Data/1.0.0": {
       "type": "project",
