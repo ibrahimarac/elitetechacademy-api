@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Elitetech.Academy.Services.Api.props" />
-</Project>
