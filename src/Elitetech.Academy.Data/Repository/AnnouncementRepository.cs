@@ -1,4 +1,5 @@
 ﻿using Elitetech.Academy.Data.Context;
+using Elitetech.Academy.Data.Repository.Base;
 using Elitetech.Academy.Domain.Entities;
 using Elitetech.Academy.Domain.Repository;
 
