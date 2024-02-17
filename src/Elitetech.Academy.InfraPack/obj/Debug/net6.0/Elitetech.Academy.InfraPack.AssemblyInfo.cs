@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Elitetech.Academy.InfraPack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cc4c7cfebcf608a69a30396e5c9044968da5e5e")]
->>>>>>> development
 [assembly: System.Reflection.AssemblyProductAttribute("Elitetech.Academy.InfraPack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Elitetech.Academy.InfraPack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
