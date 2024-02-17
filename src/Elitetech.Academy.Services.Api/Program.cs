@@ -1,3 +1,4 @@
+using Elitetech.Academy.CrossCutting.IoC;
 using Elitetech.Academy.Services.Api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 //Register Controllers
 builder.Services.AddControllers();
+
+//Register other layers services
+NativeInjectorBootStrapper.RegisterServices(builder.Services);
 
 //Register Db
 builder.Services.AddDatabaseConfiguration(builder.Configuration);

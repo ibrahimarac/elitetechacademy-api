@@ -10,7 +10,9 @@ namespace Elitetech.Academy.Services.Api.Configurations
             if(services == null) throw new ArgumentNullException(nameof(services));
 
             services.AddDbContext<EliteContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("EliteConnection")));
+            {
+                options.UseSqlServer(configuration.GetConnectionString("EliteConnection"));                
+            });
         }
     }
 }

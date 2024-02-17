@@ -84,3 +84,5 @@ D:\Elitetech\Projects\elitetechacademy-api\src\Elitetech.Academy.Services.Api\bi
 D:\Elitetech\Projects\elitetechacademy-api\src\Elitetech.Academy.Services.Api\bin\Debug\net6.0\Elitetech.Academy.Data.pdb
 D:\Elitetech\Projects\elitetechacademy-api\src\Elitetech.Academy.Services.Api\bin\Debug\net6.0\Elitetech.Academy.Domain.pdb
 D:\Elitetech\Projects\elitetechacademy-api\src\Elitetech.Academy.Services.Api\bin\Debug\net6.0\Elitetech.Academy.InfraPack.pdb
+D:\Elitetech\Projects\elitetechacademy-api\src\Elitetech.Academy.Services.Api\bin\Debug\net6.0\Elitetech.Academy.CrossCutting.dll
+D:\Elitetech\Projects\elitetechacademy-api\src\Elitetech.Academy.Services.Api\bin\Debug\net6.0\Elitetech.Academy.CrossCutting.pdb
