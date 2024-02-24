@@ -53,7 +53,7 @@ namespace Elitetech.Academy.Application.Services
             var existsAnnouncement = await _unitOfWork.AnnouncementRepository.GetByIdAsync(id);
             if (existsAnnouncement is null)
             {
-                return Result<bool>.NotFound();
+                return Result.NotFound("Duyuru bulunamadı.");
             }
 
             #endregion
@@ -82,7 +82,7 @@ namespace Elitetech.Academy.Application.Services
             var existsAnnouncement = await _unitOfWork.AnnouncementRepository.GetByIdAsync(announcementUpdateRequest.Id);
             if (existsAnnouncement is null)
             {
-                return Result.Error($"{announcementUpdateRequest.Id} nolu duyuru bulunamadı.");
+                return Result.NotFound($"{announcementUpdateRequest.Id} nolu duyuru bulunamadı.");
             }
 
             #endregion

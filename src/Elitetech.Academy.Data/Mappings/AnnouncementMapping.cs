@@ -10,7 +10,7 @@ namespace Elitetech.Academy.Data.Mappings
         {
             builder.Property(x => x.Title).HasColumnName("Title").HasColumnType("nvarchar(150)").HasColumnOrder(2);
 
-            builder.Property(x => x.Detail).HasColumnName("Detail").HasColumnType("nvarchar(8000)").HasColumnOrder(3);
+            builder.Property(x => x.Detail).HasColumnName("Detail").HasColumnType("nvarchar(4000)").HasColumnOrder(3);
 
             builder.Property(x => x.SendNotification).HasColumnName("SendNotification").HasColumnOrder(4);
 

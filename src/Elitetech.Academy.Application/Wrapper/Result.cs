@@ -45,5 +45,13 @@
             return new Result(ResultStatus.NotFound);
         }
 
+        public static Result NotFound(params string[] errorMessages)
+        {
+            return new Result(ResultStatus.NotFound)
+            {
+                Errors = errorMessages
+            };
+        }
+
     }
 }

@@ -1,15 +1,27 @@
+using Elitetech.Academy.Application.Automapper;
 using Elitetech.Academy.CrossCutting.IoC;
 using Elitetech.Academy.Services.Api.Configurations;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .CreateLogger();
 builder.Logging.ClearProviders();
-builder.Logging.AddJsonConsole();
+builder.Logging.AddSerilog(logger);
+
+Log.Logger.Information("Program Started...");
 
 #region Register Services
 
 //Register Controllers
 builder.Services.AddControllers();
+
+//Automapper
+builder.Services.AddAutoMapper(typeof(DomainToDtoMapping), typeof(DtoToDomainMapping));
 
 //Register other layers services
 NativeInjectorBootStrapper.RegisterServices(builder.Services);
@@ -23,7 +35,11 @@ builder.Services.AddSwaggerGen();
 
 #endregion
 
+builder.Host.UseSerilog();
+
 var app = builder.Build();
+
+
 
 #region Register Middlawares
 
