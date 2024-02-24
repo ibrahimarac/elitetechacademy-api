@@ -3,6 +3,9 @@ using Elitetech.Academy.Services.Api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Logging.AddJsonConsole();
+
 #region Register Services
 
 //Register Controllers

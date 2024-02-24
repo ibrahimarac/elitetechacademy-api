@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Elitetech.Academy.Application\Elitetech.Academy.Application.csproj" />
     <ProjectReference Include="..\Elitetech.Academy.Data\Elitetech.Academy.Data.csproj" />
     <ProjectReference Include="..\Elitetech.Academy.Domain\Elitetech.Academy.Domain.csproj" />
   </ItemGroup>
