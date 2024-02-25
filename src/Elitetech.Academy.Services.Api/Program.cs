@@ -5,15 +5,16 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration)
-    .Enrich.FromLogContext()
-    .WriteTo.Console()
-    .CreateLogger();
-builder.Logging.ClearProviders();
-builder.Logging.AddSerilog(logger);
+//Logging
+var configuration = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json")
+        .Build();
 
-Log.Logger.Information("Program Started...");
+builder.Logging.ClearProviders();
+Log.Logger = new LoggerConfiguration()
+        .ReadFrom.Configuration(configuration)
+        .CreateLogger();
 
 #region Register Services
 
@@ -39,8 +40,6 @@ builder.Host.UseSerilog();
 
 var app = builder.Build();
 
-
-
 #region Register Middlawares
 
 // Configure the HTTP request pipeline.
@@ -50,6 +49,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseSerilogRequestLogging();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -58,4 +59,17 @@ app.MapControllers();
 
 #endregion
 
-app.Run();
+try
+{
+    Log.Logger.Information("Program Started...");
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Exiting with error..");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
+
