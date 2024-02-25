@@ -39,7 +39,7 @@ namespace Elitetech.Academy.Application.Services
                 await _unitOfWork.CommitAsync();
                 return Result.Success(announcementEntity.Id, "Duyuru başarıyla eklendi.");
             }
-            catch (Exception ex)
+            catch (Exception ex) // Exception handling
             {
                 _logger.LogError(ex, "Duyuru eklenirken bir hata oluştu.");
                 return Result.Error("Kayıt esnasında bir hata oluştu.");
