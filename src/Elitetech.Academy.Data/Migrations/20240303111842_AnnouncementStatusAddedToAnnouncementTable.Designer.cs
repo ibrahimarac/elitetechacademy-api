@@ -4,6 +4,7 @@ using Elitetech.Academy.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Elitetech.Academy.Data.Migrations
 {
     [DbContext(typeof(EliteContext))]
-    partial class EliteContextModelSnapshot : ModelSnapshot
+    [Migration("20240303111842_AnnouncementStatusAddedToAnnouncementTable")]
+    partial class AnnouncementStatusAddedToAnnouncementTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,7 +37,7 @@ namespace Elitetech.Academy.Data.Migrations
                     b.Property<int>("AnnouncementStatus")
                         .HasColumnType("int")
                         .HasColumnName("AnnouncementStatus")
-                        .HasColumnOrder(8);
+                        .HasColumnOrder(7);
 
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2")

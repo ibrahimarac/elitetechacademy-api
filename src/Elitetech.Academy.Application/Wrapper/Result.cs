@@ -28,6 +28,7 @@
         {
             return new Result(data)
             {
+                Status = ResultStatus.Ok,
                 SuccessMessage = successMessage
             };
         }

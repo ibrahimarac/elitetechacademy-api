@@ -1,7 +1,10 @@
+using Elitetech.Academy.Application;
 using Elitetech.Academy.Application.Automapper;
 using Elitetech.Academy.CrossCutting.IoC;
 using Elitetech.Academy.Services.Api.Configurations;
+using FluentValidation;
 using Serilog;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +36,9 @@ builder.Services.AddDatabaseConfiguration(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Fluent Validation
+builder.Services.AddValidatorsFromAssembly(Assembly.GetAssembly(typeof(ApplicationAssemblyInfo)));
 
 #endregion
 

@@ -2,8 +2,8 @@
 {
     public enum ResultStatus
     {
-        Ok,
-        Exception,
-        NotFound
+        Ok = 1,
+        Exception = 2,
+        NotFound = 3
     }
 }
