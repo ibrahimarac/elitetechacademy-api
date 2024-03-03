@@ -20,6 +20,8 @@ namespace Elitetech.Academy.Data.Mappings
 
             builder.Property(x => x.EndDate).HasColumnName("EndDate").HasColumnOrder(7);
 
+            builder.Property(x => x.AnnouncementStatus).HasColumnName("AnnouncementStatus").HasColumnOrder(8);
+
             builder.ToTable("Announcements");
         }
     }

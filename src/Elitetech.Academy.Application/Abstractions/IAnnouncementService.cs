@@ -7,7 +7,9 @@ namespace Elitetech.Academy.Application.Abstractions
     {
         Task<Result> GetAllAsync();
         Task<Result> AddAsync(AnnouncementCreateRequestDto announcementCreateRequest);
-        Task<Result> Update(AnnouncementUpdateRequestDto announcementUpdateRequest);
+        Task<Result> UpdateAsync(AnnouncementUpdateRequestDto announcementUpdateRequest);
+        Task<Result> SendNotificationAsync(int announcementId);
+        Task<Result> SendSmsAsync(int announcementId);
         Task<Result> DeleteAsync(int id);
     }
 }

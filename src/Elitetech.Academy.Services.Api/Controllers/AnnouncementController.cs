@@ -29,7 +29,19 @@ namespace Elitetech.Academy.Services.Api.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> Update(AnnouncementUpdateRequestDto announcementUpdateRequest)
         {
-            return CustomResponse(await _announcementService.Update(announcementUpdateRequest));
+            return CustomResponse(await _announcementService.UpdateAsync(announcementUpdateRequest));
+        }
+
+        [HttpGet("send-notification")]
+        public async Task<IActionResult> SendNotification(int announcementId)
+        {
+            return CustomResponse(await _announcementService.SendNotificationAsync(announcementId));
+        }
+
+        [HttpGet("send-sms")]
+        public async Task<IActionResult> SendSms(int announcementId)
+        {
+            return CustomResponse(await _announcementService.SendSmsAsync(announcementId));
         }
 
         [HttpDelete("delete/{announcementId:int}")]
