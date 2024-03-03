@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Elitetech.Academy.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6864d822e5c74bede11f31343fce7ca8be0cf4fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22ec52c03c6af3f740f82b760e59765628d4b52d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Elitetech.Academy.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Elitetech.Academy.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
